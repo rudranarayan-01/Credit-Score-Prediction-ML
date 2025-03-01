@@ -42,47 +42,6 @@ Ensure the dataset is in CSV format and properly cleaned before proceeding.
 6. **Model Evaluation**: Checking performance using accuracy and confusion matrix.
 7. **Visualization**: Plotly graphs to represent feature importance, prediction distribution, and evaluation metrics.
 
-## Code Snippet
-
-```python
-import pandas as pd
-import numpy as np
-import plotly.express as px
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score, classification_report
-
-# Load dataset
-df = pd.read_csv("credit_score_data.csv")
-
-# Data preprocessing (example: handling missing values)
-df.fillna(df.mean(), inplace=True)
-
-# Splitting features and target
-X = df.drop(columns=['Credit Score'])
-y = df['Credit Score']
-
-# Train-test split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-# Train model
-model = RandomForestClassifier(n_estimators=100, random_state=42)
-model.fit(X_train, y_train)
-
-# Predictions
-y_pred = model.predict(X_test)
-
-# Evaluation
-accuracy = accuracy_score(y_test, y_pred)
-print("Accuracy:", accuracy)
-print(classification_report(y_test, y_pred))
-
-# Feature Importance Visualization
-feature_importance = pd.DataFrame({'Feature': X.columns, 'Importance': model.feature_importances_})
-fig = px.bar(feature_importance, x='Feature', y='Importance', title='Feature Importance')
-fig.show()
-```
-
 ## Results
 
 - **Accuracy Achieved**: \~85% (varies based on dataset and preprocessing)
@@ -101,7 +60,8 @@ This project demonstrates the application of machine learning in **credit score 
 
 ## Author
 
-[Your Name]
+**Name** : Rudranarayan Sahu
+**Email** : rudranarayansahu.tech@gmail.com
 
 ## License
 
