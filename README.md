@@ -44,7 +44,7 @@ Ensure the dataset is in CSV format and properly cleaned before proceeding.
 
 ## Results
 
-- **Accuracy Achieved**: \~85% (varies based on dataset and preprocessing)
+- **Accuracy Achieved**: \~82% (varies based on dataset and preprocessing in test dataset), 100% accuracy in train dataset
 - **Feature Importance Analysis**: Helps in understanding key factors affecting credit scores.
 - **Interactive Visualizations**: Plotly provides an engaging way to analyze data.
 
