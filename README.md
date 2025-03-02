@@ -58,10 +58,11 @@ This project demonstrates the application of machine learning in **credit score 
 - Implement **other ML models** like XGBoost or Neural Networks for comparison.
 - Deploy the model as a web app using Flask or Streamlit.
 
-## Author
+## Contributors
+- **Name** - Rudranarayan Sahu
+- **Website** - https://akash0101.pythonanywhere.com
+- **Mail** - rudranarayansahu.tech@gmail.com
 
-**Name** : Rudranarayan Sahu
-**Email** : rudranarayansahu.tech@gmail.com
 
 ## License
 
